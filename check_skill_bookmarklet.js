@@ -90,6 +90,7 @@ javascript:(function(){
                 console.log("trying to reset");
                 $("#app_results").css("display", "none");
                 $("#skills_get").css("display", "inline-block");
+                window.scrollTo(0,0);
             });
             console.log("attempt ended");
         });
