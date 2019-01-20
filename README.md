@@ -3,7 +3,7 @@ A collection of javascript bookmarklets and other things for quickly finding FGO
 
 Currently created bookmarklets:
 <ul>
-  <li> Quick Servant Skill Check
+  <li> (DEPRECATED: The site has a navigation bar... this is completely unnecessary) Quick Servant Skill Check
     <ul>
       <li>For use on grandorder.gamepress.gg</li>
       <li>Quickly look up the stats for a servant's current skill levels</li>
