@@ -6,9 +6,9 @@ Currently created bookmarklets:
   <li> Quick Servant Skill Check
     <ul>
       <li>For use on grandorder.gamepress.gg</li>
-      <li>Quickly look up the stats for as servants current skill levels</li>
+      <li>Quickly look up the stats for a servant's current skill levels</li>
       <li>Saves you like... 10 seconds or so of scrolling and clicking.</li>
-      <li>Convenient if you aren't trying to look at future upgrades/compare levels</li>
+      <li>Convenient if you are only interested in looking at one level of each skill at a time.</li>
     </ul>
   </li>
 </ul>
