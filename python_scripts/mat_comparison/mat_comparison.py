@@ -1,69 +1,19 @@
 """
-3/3/2020
-To-do:
 
+7/6/2020
+    To-do:
 
-    Need to deal with classes for servants in dailies or other quests
-        this at least should work now
-Fixed (Kinda)
-    Quests list the max_hp already. Unless it has the potential to spawn 1 beefy dude, which this program does not account for yet
-    (!!!) Need to deal with random enemies (min hp max hp, store them all??)
-            might have to modify how quest stores enemies in the waves
-            also, have to delete and repickle when changing the cvlasses I'd assume
-FIXED (more or less)
-    Still have to figure out what to do with exceptions.
-    Like, the max hp is 17,800, but instead of the 3 it ~could spawn 1 80,000 hp enemy
-    (!!!!!) caching random servants is BAD
-        because the HP changes from node to node :(
+    Create an interface for querying for specific data.
+    Should allow you to filter for quests that have specific combos of materials.
 
+    What about the optimal path suggestion for a given amount of resources?
+    4 dragon fangs, 3 phoenix feathers, 3 hearts of the foreign god, and 16 pages?
+    Should be able to calculate this for you based on the currently available free quests.
 
-    DONE!
-        NEED TO CACHE ENEMIES OMG SO SLOW
-        MAYBE CACHE QUESTS SO ITS FASTER
-        18
+    Modify Servant Class so it also calculates and caches the total AP costs for farming all the mats.
+    Add a function to calculate to AP costs for teh remaining mats you need to get skills and ascensions to where you wnat them.
+    Migth be easy enough to do based on existing function for doing such calculations.
 
-    Gotta figure out how to deal with the results after using the Comparator
-    Ohhh I guess we could manually check if the quests are free type or not,
-    maybe make a helper method in Quest
-    Done!
-
-    FIXED:
-        NOTE: SEE https://gamepress.gg/grandorder/item/dragon-fang
-        some quests have multiple '-'s in their name, so our attempt to grab the singularity name fails to work properly
-        Maybe look up how to do terminal coloring for output to go along with the *** or to replace it
-
-
-    add in the whole
-        if value == None:
-            continue
-        else:
-    logic for other methods in Comparator
-
-    change logic for methods in Comparator to use casts to float when doing < >
-    (becasue 13.asdjfaskdjfal < "7" evaluates to true otherwise...)
-
-
-figure out how to handle quests with the whole
-    x1 13.5% type of format.
-    like..  regular expressions?? we can only do that yeah?
-    and how do we mathematically handle like
-    x5 13.5%
-    doesn't that mean there is a 13.5% change of getting 5 of them.
-    in which case... (100 / 13.5) = number of runs / 5
-    which means the actual average is 100 / (13.5 * 5)
-
-
-once you finalize all the details
-use https://gamepress.gg/grandorder/free-quests
-    note: you have to be careful not to grab the event quests
-          might have to use the list of Fuyuki etc to grab the ids of the singularity sections
-download all the quests
-pickle them all
-and create an interface for querying about all the items
-
-maybe pickle all the items too
-and make a menu which auto loads all the item names
-and allows you to make queries easily
 
 
 """
